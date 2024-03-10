@@ -1,0 +1,293 @@
+/* Navbar */
+.navbar {
+    max-height: 60px;
+    background-color: #1b1b32;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar a:hover {
+    color: #7F8C8D;
+}
+
+
+/* Estilos generales */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.dark-section{
+    background-color: #1b1b32;
+    color: white;
+}
+
+.white-section{
+    background-color: white;
+    color: black;
+}
+
+.title-section{
+    font-size: 2rem;
+    padding: 15px 0 ;
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-section{
+    font-size: 1.2rem;
+    text-align:justify;
+}
+
+.section-description{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.dark-text{
+    color: black;
+}
+
+.white-text{
+    color: white;
+}
+
+
+/* Hero */
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+    display: flex;
+    padding-top: 5px;
+}
+
+.hero-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.hero-principal h2{
+    font: 1.5rem;
+    color: #615151;
+}
+
+.hero-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+    margin: 0;
+    padding: 1px;
+}
+
+/* about me */
+.about-me{
+    text-align: center;
+    align-items : center;
+    padding: 50px;
+}
+
+.about-me button{
+    font-size: 1.0rem;
+    margin-top: 15px;
+}
+
+.about-me button:hover{
+   background-color: #1b1b32;
+   border: 1px solid white;
+}
+
+/* skilss */
+
+.skills{
+    padding: 20px;
+    justify-content: center;
+}
+
+.skills h3{
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* projects */
+.recent-projects{
+    padding: 5px;
+}
+
+.recent-projects img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.projects-container{
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.project{
+    position: relative;
+}
+
+.project img{
+    max-height: 290px ;
+}
+
+.project:hover img{
+    opacity: 0.2;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .icons-container{
+    display: flex;
+    justify-content: center;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+/* footer */
+footer{
+    min-height: 100px;
+    padding: 15px;
+}
+
+.footer-text{
+    font-size: 1.5rem;  
+    margin-bottom: 10px;
+}
+
+.social-media-icons a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.social-media-icons i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2 ease-in;
+}
+
+.social-media-icons a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.social-media-icons a:hover i{
+    color: black;
+}
+
+.copyright{
+    font-size: 15px;
+    color: #aeaeae;
+    padding-top: 10px;
+}
+
+
+
+/* Breakpoints */
+
+/* navbar breakpoints*/
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+/* skills breakpoint */
+
+@media screen and (max-width: 1030px) {
+    img[src*="skillicons.dev"] {
+      content: url("https://skillicons.dev/icons?i=html,css,js,nodejs,bootstrap,laravel,php,mysql,mongo,androidstudio,java,firebase,git,github,python,django,vscode,linux&perline=9");
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    img[src*="skillicons.dev"] {
+      content: url("https://skillicons.dev/icons?i=html,css,js,nodejs,bootstrap,laravel,php,mysql,mongo,androidstudio,java,firebase,git,github,python,django,vscode,linux&perline=6");
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    img[src*="skillicons.dev"] {
+      content: url("https://skillicons.dev/icons?i=html,css,js,nodejs,bootstrap,laravel,php,mysql,mongo,androidstudio,java,firebase,git,github,python,django,vscode,linux&perline=3");
+    }
+  }
+
+
+
+/* project breakpoints */
+
+@media screen and (max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+
+    .overlay i{
+        font-size: 40px;
+    }
+}
